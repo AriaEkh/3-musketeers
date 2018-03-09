@@ -4,7 +4,8 @@
 
 # Cash 
 
-The project purpose is to write the README.md file of the cash program. This program can give you the change of over 30 differents currencies into US Dollars, Euro and Pound Sterling 
+The project purpose is to write the README.md file of the cash program. This program can give you the change of over 30 differents currencies into US Dollars, Euro and Pound Sterling.
+You can also save a default currency, so you only have to write the amount you want to change 
 
 ## Getting Started
 
@@ -50,6 +51,25 @@ If you need to know what currencies you can know the change of, you can go into 
 cash/lib 
 
 Then open the currencies json file.
+
+
+## Save your default currency
+
+To save your default currency you have to use the following command (You can replace USD by the currency you want to have as default)
+
+```sh
+❯ node index.js --save USD
+```
+
+Now if you write 
+
+```sh
+❯ node index.js 10 
+```
+
+It will give you the change of 10 USD into EUR
+
+
 
 ## Authors
 
