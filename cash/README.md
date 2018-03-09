@@ -14,27 +14,35 @@ These instructions will get you a copy of the project up and running on your loc
 
 First of all you need to go into your directory thanks to the terminal.
 
-cd path/to/directory/3-musketeers/cash/bin
-
+```sh
+❯ cd /path/to/workspace/3-musketeers/cash/bin
+```
 
 ### Installing
 
 Then install some packages here thanks to the following command:
 
-npm install
-
+```sh
+❯ npm install
+```
 
 ## Running the tests
 
 Finally you can run the program with the following command:
 
-node index.js
+```sh
+❯ node index.js
+```
 
 If you want to know the change of a currency into another one you can write it like this: 
 
-node index.js 10 CZK
+```sh
+❯ node index.js 10 CZK
+```
+
 
 It will give you the change in USD, GBP and EUR
+
 
 
 If you need to know what currencies you can know the change of, you can go into : 
