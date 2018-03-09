@@ -8,6 +8,11 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
+/**
+ * Save the chosen currency as default in the config.json file
+ * @param {*} argv Configuration of the user
+ */
+
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -20,10 +25,18 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+/**
+ * Display the version of the module
+ */
+
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
+
+/**
+ * Display a helping message which shows the command and so 
+ */
 
 const help = () => {
   console.log(`
@@ -57,6 +70,10 @@ Examples:
   process.exit(1);
 };
 
+/**
+ * Process the prompted command 
+ * @param {*} argv Command exemple : --version , --help, --save
+ */
 const helpers = argv => {
   // Version
   if (argv.indexOf('--version') !== - 1 || argv.indexOf('-v') !== - 1) {
